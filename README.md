@@ -1,2 +1,2 @@
 # edccustom
-This landing for on-kine shop
+This landing for on-line shop
