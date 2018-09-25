@@ -1,0 +1,203 @@
+@import "../variables.less";
+
+@import "../mixin.less";
+
+.slider__input {
+    display: none;
+}
+
+.reviews__wrapper {
+   .padding-left-right();
+   .container();
+   position: relative;
+   background-color: @body-bg;
+   z-index: 10;
+}
+
+.reviews__promo-text, .reviews__auhor-detail {
+    display: none;
+}
+
+.reviews__promo-text-title {
+    .zero-style();
+    .font-size(30px, 36px);
+    font-weight: 700;
+    font-family: inherit;
+    color: @reviews-title-color;
+}
+
+.reviews__promo-text-article {
+    .zero-style();
+    .font-size (14px, 24px);
+    font-weight: 400;
+    font-family: inherit;
+    color: @main-font-color;
+}
+
+.reviews__promo-text-link {
+     .font-size (14px, 24px);
+      font-weight: 400;
+      font-family: inherit;
+      color: @contact-font-color;
+}
+
+.reviews__auhor-name {
+    .zero-style();
+    margin-bottom: 25px;
+    color: @advantages-h3-color;
+    .font-size(18px, 30px);
+    font-weight: 700;
+    text-align: center;
+}
+
+.reviews__item p {
+    .zero-style();
+    .font-size(14px, 30px);
+    font-family: inherit;
+    color: inherit;
+    text-align: center;
+    font-weight: 400;
+}
+
+.reviews__item {
+  padding-top: 50px;
+  min-height: 300px;
+  display: none;
+  animation: reviews-bounce 0.6s;
+}
+
+.reviews__toggles {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+    margin-top: 10px;
+}
+
+.slider__toggle {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #bec2c7;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__toggle:not(:last-of-type) {
+margin-right: 14px;
+}
+
+.slider__toggle:hover {
+  background-color: @main-color-dark;
+  transition: 0.3s;
+}
+
+#reviews-input-1:checked ~ .reviews__toggles label[for="reviews-input-1"],
+#reviews-input-2:checked ~ .reviews__toggles label[for="reviews-input-2"],
+#reviews-input-3:checked ~ .reviews__toggles label[for="reviews-input-3"] {
+    border: 3px solid @main-font-color;
+    transition: 0.3s;
+    background-color: #ffffff;
+}
+
+#reviews-input-1:checked ~ .reviews__items .reviews__item:nth-child(1) {
+    display: block;
+}
+
+#reviews-input-2:checked ~ .reviews__items .reviews__item:nth-child(2) {
+    display: block;
+    transition: 1s;
+}
+
+#reviews-input-3:checked ~ .reviews__items .reviews__item:nth-child(3) {
+    display: block;
+}
+
+@media @tablet-widths {
+  .reviews__wrapper {
+      .padding-left-right(40px, 40px);
+      margin-bottom: -60px;
+  }
+  
+  .reviews__promo-text {
+      position: relative;
+      display: block;
+      padding-left: 310px;
+      padding-top: 100px;
+  }
+  
+  .reviews__promo-text-title {
+      padding-bottom: 18px;
+  }
+  
+  .reviews__promo-text-article {
+      padding-bottom: 18px;
+  }
+  
+  .reviews__item {
+      min-height: 150px;
+  }
+  
+  .reviews__items {
+      margin-top: 200px;
+  }
+  
+  .reviews__auhor-name {
+      .font-size(20px, 30px);
+      margin-bottom: 0px;
+      
+  }
+  
+  .reviews__item p {
+      .font-size(18px, 30px);
+      margin-top: -170px;
+  }
+  
+  .reviews__auhor-detail {
+      display: block;
+      .font-size( 14px, 30px);
+      font-family: inherit;
+      color: inherit;
+      font-weight: 400;
+      text-align: center;
+  }
+  
+  .reviews__promo-text::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 250px;
+      height: 290px;
+      background-image: url("../../img/timer.png");
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+}
+
+@media @desktop-widths {
+  .reviews__promo-text {
+      background-color: @advantages-bg;
+      .padding-left-right (490px, 175px);
+      padding-bottom: 115px;
+  }
+  
+  .reviews__wrapper {
+      .padding-left-right(0px, 0px);
+  }
+  
+  .reviews__promo-text::before {
+      width: 300px;
+      height: 350px;
+      left: 130px;
+      top: 0;
+      background-size: cover;
+  }
+  
+  .reviews__promo-text-article, .reviews__promo-text-link {
+    .font-size (18px, 30px);
+  }
+}
+
+

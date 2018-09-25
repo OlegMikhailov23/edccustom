@@ -1,0 +1,123 @@
+@import "../variables.less";
+
+@import "../mixin.less";
+
+.download-app {
+    position: relative;
+    .container();
+}
+
+.download-app__wrapper {
+    .container();
+    padding-top: 29px;
+    padding-bottom: 35px;
+    background-color: @main-color-dark;
+    text-align: center;
+}
+
+.download-app__title {
+    display: none;
+}
+
+.download-app__btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    .padding-top-bottom (15px,
+    15px);
+    .padding-left-right (36px,
+    36px);
+    .font-size ( 18px,
+    18px);
+    color: @font-color-white;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  &:hover {
+    background-color: #ffffff;
+    color: @post-btn-color;
+    transition: 0.3s;
+  }
+}
+
+
+
+.download-app__logo {
+    display: inline-block;
+    .size(60px,
+    60px);
+}
+
+.download-app__logo-apple {
+    background: url("../../img/logo-apple.svg") center no-repeat;
+}
+
+.download-app__logo-android {
+    background: url("../../img/logo-android.svg") center no-repeat;
+}
+
+.download-app__logo-windows {
+    background: url("../../img/logo-microsoft.svg") center no-repeat;
+}
+
+.download-app__annotation {
+    color: @font-color-white;
+    font-family: inherit;
+    .font-size(14px,
+    24px);
+    font-weight: 300;
+}
+
+@media @tablet-widths {
+    .download-app__wrapper {
+        position: absolute;
+        left: 40px;
+        top: -545px;
+        width: 300px;
+        background-color: transparent;
+    }
+    .download-app__title {
+        .zero-style();
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 37px;
+        width: 190px;
+        color: @font-color-white;
+        font-family: inherit;
+        .font-size(40px,
+        42px);
+        font-weight: 300;
+    }
+    .download-app__btn {
+        margin-bottom: 42px;
+    }
+}
+
+@media @desktop-widths {
+    .download-app__wrapper {
+        position: absolute;
+        left: 50px;
+        top: -545px;
+        width: 300px;
+        background-color: transparent;
+    }
+  
+    .download-app__title {
+        .zero-style();
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 37px;
+        width: 190px;
+        color: @font-color-white;
+        font-family: inherit;
+        .font-size(40px,
+        42px);
+        font-weight: 300;
+    }
+    .download-app__btn {
+        margin-bottom: 42px;
+    }
+}

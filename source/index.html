@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EDC custom главная</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!--Доп стили-->
+    
+    <link rel="stylesheet" href="libs/animate/animate.min.css">
+    <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    
+    <!--Доп стили-->
+    
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="page-header__logo">
+            <a href="#" class="page-header__logo-link">Логотип</a>
+        </div>
+        <div class="page-header__open">
+            <button class="page-header__open-btn  page-header__btn" type="button">Открыть меню</button>
+        </div>
+        <nav class="main-nav main-nav--nojs">
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                    <li class="main-nav__list-item  main-nav__list-item--hidden">
+                        <a href="#" class="main-nav__logo-link">Pink</a>
+                        <button class="page-header__close-btn  page-header__btn">Закрыть меню</button>
+                    </li>
+                    <li><a class="main-nav__list-item main-nav__list-item--active">Главная</a></li>
+                    <li><a class="main-nav__list-item" href="photo.html">Фотографии</a></li>
+                    <li><a class="main-nav__list-item" href="form.html">Конкурс</a></li>
+                    <li><a class="main-nav__list-item" href="#">Html Academy</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="intro__wrapper">
+               <div class="owl-carousel">
+                              <div class="item">
+                              <div class="intro__pic"></div>
+        <!-- Здесь можно размещать HTML отзыва -->
+                              </div>
+                              <div class="item">
+                              <div class="intro__pic"></div>
+        <!-- Здесь можно размещать HTML отзыва -->
+                              </div>
+                              <div class="item">
+                              <div class="intro__pic"></div>
+        <!-- Здесь можно размещать HTML отзыва -->
+                              </div>
+              </div>
+            </div>
+        </section>
+        <section class="download-app">
+            <div class="download-app__wrapper">
+                <h1 class="download-app__title">Взгляните на жизнь иначе!</h1>
+                <button class="download-app__btn" type="button">Скачать приложение</button>
+                <div class="download-app__logo  download-app__logo-apple"></div>
+                <div class="download-app__logo  download-app__logo-android"></div>
+                <div class="download-app__logo  download-app__logo-windows"></div>
+                <p class="download-app__annotation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantages__wrapper">
+                <div class="advantages__quote">
+                    <h2 class="advantages__quote-question">Устали от серости мегаполиса?</h2>
+                    <h2 class="advantages__quote-answer">Нам есть, что вам 
+предложить!</h2>
+                </div>
+                <div class="advantages__item-list">
+                   <div class="triangle-top"><img src="img/bg-triangle-white.svg" alt=""></div>
+                   <div class="advantages__item-list-items">
+                    <div class="advantages__item">
+                        <picture> 
+                          <source media="(min-width: 1200px)"
+                          srcset="img/iphone-screen-1-desktop@1x.png 1x,
+                          img/iphone-screen-1-desktop@2x.png 2x">
+                          <img class="advantages__item-iphone-screen" src="img/iphone-screen-1-desktop@1x.png" alt="">
+                        </picture>
+                        <h3>Поднимает настроение</h3>
+                        <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                    </div>
+                    <div class="advantages__item">
+                       <picture> 
+                          <source media="(min-width: 1200px)"
+                          srcset="img/iphone-screen-2-desktop@1x.png 1x,
+                          img/iphone-screen-2-desktop@2x.png 2x">
+                          <img class="advantages__item-iphone-screen" src="img/iphone-screen-2-desktop@1x.png" alt="">
+                        </picture>
+                        <h3>Меняет мир вокруг</h3>
+                        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                    </div>
+                    <div class="advantages__item">
+                       <picture> 
+                          <source media="(min-width: 1200px)"
+                          srcset="img/iphone-screen-3-desktop@1x.png 1x,
+                          img/iphone-screen-3-desktop@2x.png 2x">
+                          <img class="advantages__item-iphone-screen" src="img/iphone-screen-3-desktop@1x.png" alt="">
+                        </picture>
+                        <h3>Заводит новых друзей</h3>
+                        <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                    </div>
+                    </div>
+                    <div class="advantages__bottom-iphone"></div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="reviews__wrapper slider">
+                <div class="reviews__promo-text">
+                    <h2 class="reviews__promo-text-title">Эффект на 24 часа!</h2>
+                    <p class="reviews__promo-text-article">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                    <a class="reviews__promo-text-link" href="#">Узнать больше об исследовании</a>
+                </div>
+                <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+                <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+                <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+                <div class="reviews__items">
+                    <div class="reviews__item slider__item">
+                        <h3 class="reviews__auhor-name">Николай Петров</h3>
+                        <span class="reviews__auhor-detail">25 лет, водитель трамвая</span>
+                        <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </div>
+                    
+                    <div class="reviews__item slider__item">
+                        <h3 class="reviews__auhor-name">Касаткин Игорь</h3>
+                        <span class="reviews__auhor-detail">31 лет, слесарь</span>
+                        <p>«Просто класс! Я не поверил своим глазам, когда воспользовался этим приложением!»</p>
+                    </div>
+                    <div class="reviews__item slider__item">
+                        <h3 class="reviews__auhor-name">Олег Зеленцов</h3>
+                        <span class="reviews__auhor-detail">30 лет, токарь-фрезеровщик</span>
+                        <p>«Просто божественно, ребята постарались! Мое мирровоззрение сильно изменилось, когда я начал использовать это приложение, жизнь наполнилась смыслом. Спасибо разрабам, молодцы!»</p>
+                    </div>
+                </div>
+                <div class="reviews__toggles slider__toggles">
+                    <label class="slider__toggle" for="reviews-input-1">1</label>
+                    <label class="slider__toggle" for="reviews-input-2">2</label>
+                    <label class="slider__toggle" for="reviews-input-3">3</label>
+                </div>
+            </div>
+        </section>
+        <div class="triangle-bottom"><img src="img/bg-triangle-white.svg" alt=""></div>
+        <section class="price">
+            <div class="price__wrapper slider">
+                <input class="slider__input" type="radio" name="price" id="price-input-1">
+                <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
+                <input class="slider__input" type="radio" name="price" id="price-input-3">
+                <table class="price__items">
+                    <tr>
+                        <th class="price__table-header price__table-field-hidden-th">
+                        </th>
+                        <th class="price__table-header">Стандарт
+                            <p>3,99 USD</p>
+                        </th>
+                        <th class="price__table-header">Стандарт
+                            <p>3,99 USD</p>
+                        </th>
+                        <th class="price__table-header">Стандарт
+                            <p>3,99 USD</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="price__table-field  price__table-field-hidden">Розовый фильтр</td>
+                      <td class="price__table-field">Розовый фильтр<div class="price__table-field-mark price__table-field-mark--check"></div></td>
+                      <td class="price__table-field">Розовый фильтр<div class="price__table-field-mark price__table-field-mark--check"></div></td>
+                      <td class="price__table-field">Розовый фильтр<div class="price__table-field-mark price__table-field-mark--check"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="price__table-field  price__table-field-hidden">Смайлики</td>
+                        <td class="price__table-field">Смайлики<div class="price__table-field-mark price__table-field-mark--no"></div></td>
+                      <td class="price__table-field">Смайлики<div class="price__table-field-mark price__table-field-mark--check"></div></td>
+                      <td class="price__table-field">Смайлики<div class="price__table-field-mark price__table-field-mark--check"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="price__table-field  price__table-field-hidden">Комментарии</td>
+                      <td class="price__table-field">Комментарии<div class="price__table-field-mark price__table-field-mark--no"></div></td>
+                      <td class="price__table-field">Комментарии<div class="price__table-field-mark price__table-field-mark--no"></div></td>
+                      <td class="price__table-field">Комментарии<div class="price__table-field-mark price__table-field-mark--check"></div></td>
+                    </tr>
+                </table>
+                <div class="price__toggles slider__toggles">
+                    <label class="slider__toggle" for="price-input-1">1</label>
+                    <label class="slider__toggle" for="price-input-2">2</label>
+                    <label class="slider__toggle" for="price-input-3">3</label>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="contacts__wrapper">
+                <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
+                <div class="contacts__items">
+                <div class="contacts__items-item">
+                    <p class="contacts__action">Звоните:</p>
+                    <span class="contacts__contact"><a href="tel:+7(812)5556666">+7 (812) 555-66-66</a></span>
+                </div>
+                <div class="contacts__items-item">
+                    <p class="contacts__action">Пишите:</p>
+                    <span class="contacts__contact"><a href="mailto:dkfolkin@gmail.com">dkfolkin@gmail.com</a></span>
+                </div>
+                <div class="contacts__items-item">
+                    <p class="contacts__action">Приезжайте в гости:</p>
+                    <p class="contacts__contact">ул. Большая Конюшенная, 19/8</p>
+                </div>
+                
+                </div>
+            </div>
+            <div class="triangle-footer"><img src="img/bg-triangle-white-footer.svg" alt=""></div>
+        </section>
+    </main>
+    <footer class="page-footer  page-footer-hidden">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__footer-logo">
+                <a href="#">Pink</a>
+            </div>
+            <div class="page-footer__social-links">
+                <a class="page-footer__social-link page-footer__link-tv" href="#">Twitter</a>
+                <a class="page-footer__social-link page-footer__link-fc" href="#">Facebook</a>
+                <a class="page-footer__social-link page-footer__link-you" href="#">Youtube</a>
+            </div>
+            <div class="page-footer__develop">
+                <span>Разработано</span>
+                <a href="#">Html Academy</a>
+            </div>
+        </div>
+    </footer>
+   <script src="js/script.js"></script>
+   <!--Доп скрипт-->
+   <script src="libs/jquery/jquery.js"></script>
+   <script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+   <script src="js/owl.js"></script>
+   <!--Доп скрипт-->
+</body>
+
+</html>

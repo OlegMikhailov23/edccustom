@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pink форма</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body class="body-wrapper">
+    <header class="page-header">
+        <div class="page-header__logo">
+            <a href="index.html" class="page-header__logo-link">Pink</a>
+        </div>
+        <div class="page-header__open">
+            <button class="page-header__open-btn  page-header__btn" type="button">Открыть меню</button>
+        </div>
+        <nav class="main-nav main-nav--nojs">
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                    <li class="main-nav__list-item  main-nav__list-item--hidden">
+                        <a href="index.html" class="main-nav__logo-link">Pink</a>
+                        <button class="page-header__close-btn  page-header__btn">Закрыть меню</button>
+                    </li>
+                    <li><a class="main-nav__list-item" href="index.html">Главная</a></li>
+                    <li><a class="main-nav__list-item" href="photo.html">Фотографии</a></li>
+                    <li><a class="main-nav__list-item main-nav__list-item--active">Конкурс</a></li>
+                    <li><a class="main-nav__list-item" href="#">Html Academy</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="intro__wrapper">
+                <h1 class="intro__header">Конкурс на самое безбашенное<br>путешествие с Пинк</h1>
+            </div>
+        </section>
+        <section class="form">
+            <div class="form__wrapper">
+                <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+                <p class="form__title  form__title--hidden">Пожалуйста, заполните форму ниже:</p>
+                <form action="#" method="post">
+                    <div class="form__name-fields">
+                        <label for="surname">Фамилия:
+                            <input class="form__name-field" type="text" name="surname" placeholder="Укажите фамилию" id="surname">
+                        </label>
+                        <label for="name">Имя:
+                            <input class="form__name-field" type="text" name="name" placeholder="Укажите имя" id="name" required>
+                        </label>
+                        <label for="secondname">Отчество:
+                            <input class="form__name-field" type="text" name="secondname" placeholder="Укажите отчество" id="secondname">
+                        </label>
+                    </div>
+                    <div class="form__proofs">
+                            <p class="form__proofs-title">Ваши безбашенные достижения в путешествии</p>
+                            <div class="form__proofs-item-grupp">
+                                <div class="form__proofs-item">
+                                    <input type="checkbox" name="selfie" id="selfie">
+                                    <label for="selfie">Сделал селфи с акулой</label>
+                                </div>
+                                <div class="form__proofs-item">
+                                    <input type="checkbox" name="fry-on-beach" id="fry-on-beach">
+                                    <label for="fry-on-beach">Обгорел на пляже</label>
+                                </div>
+                            </div>
+                            <div class="form__proofs-item-grupp">
+                                <div class="form__proofs-item">
+                                    <input type="checkbox" name="sawchack" id="sawchack">
+                                    <label for="sawchack">Видел Чака Норриса</label>
+                                </div>
+                                <div class="form__proofs-item">
+                                    <input type="checkbox" name="buysov" id="buysov">
+                                    <label for="buysov">Накупил сувениров</label>
+                                </div>
+                            </div>
+                            <div class="form__proofs-item-grupp">
+                                <div class="form__proofs-item">
+                                    <input type="checkbox" name="holdtower" id="holdtower">
+                                    <label for="holdtower">Удержал башню</label>
+                                </div>
+                                <div class="form__proofs-item">
+                                    <input type="checkbox" name="hotelcrasher" id="hotelcrasher">
+                                    <label for="hotelcrasher">Разгромил отель</label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="form__contacts">
+                        <p class="form__contacts-title  form__contacts-title--hidden">Контактная информация</p>
+                        <label for="tel">Номер телефона
+                            <input class="form__tel-field" type="tel" name="tel" placeholder="Номер, пожалуйста" id="tel">
+                        </label>
+                        <label for="email">Адрес почты
+                            <input class="form__email-field" type="email" name="email" placeholder="E-mail, пожалуйста" id="email">
+                        </label>
+                    </div>
+                    <div class="form__whatapp">
+                        <p>С каким приложением путешествовали?</p>
+                        <input type="radio" name="whatapp" id="ios" value="Ios">
+                        <label for="ios">Pink для iOS</label>
+                        <input type="radio" name="whatapp" id="android" value="android">
+                        <label for="android">Pink для Android</label>
+                        <input type="radio" name="whatapp" id="Windows" value="Windows">
+                        <label for="Windows">Windows Phone</label>
+                    </div>
+                    <div class="form__textfield">
+                        <p class="form__textfield-title">Опишите свои эмоции</p>
+                        <textarea name="emotion" id="emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                    </div>
+                    <div class="form__submit">
+                    <button class="form__btn" type="submit">Отправить форму</button>
+                    <div class="form__form-warning"><sup>*</sup>— обязательные поля</div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__footer-logo">
+                <a href="#">Pink</a>
+            </div>
+            <div class="page-footer__social-links">
+                <a class="page-footer__social-link page-footer__link-tv" href="#">Twitter</a>
+                <a class="page-footer__social-link page-footer__link-fc" href="#">Facebook</a>
+                <a class="page-footer__social-link page-footer__link-you" href="#">Youtube</a>
+            </div>
+            <div class="page-footer__develop">
+                <span>Разработано</span>
+                <a href="#">Html Academy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+@import "../variables.less";
+
+@import "../mixin.less";
+
+
+.triangle-bottom {
+  .container();
+  position: relative;
+  background-color:transparent;
+  margin-bottom: -29px;
+}
+
+@media @tablet-widths {
+  .triangle-bottom {
+     margin-bottom: -59px;
+  }
+}
+
+@media @desktop-widths {
+  .triangle-bottom {
+     margin-bottom: -100px;
+  }
+}
+
+.triangle-top {
+  .container();
+  position: relative;
+  margin-left: -20px;
+  top: -56px;
+}
+
+@media @tablet-widths {
+  .triangle-top {
+    top: -28px;
+    left: -330px;
+  }
+}
+
+@media @desktop-widths {
+  .triangle-top {
+    left: -30px;
+    top: -3px;
+  }
+}
+
+.triangle-footer {
+    .container();
+    position: relative;
+    background-color: transparent;
+    top: -1px;
+}
+
+@media @tablet-widths {
+  .triangle-footer img {
+    width: 100%;
+  }
+}
