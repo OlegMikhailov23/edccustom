@@ -2,9 +2,16 @@
 
 @import "../mixin.less";
 
+.intro {
+  position: relative;
+  z-index: -10;
+  overflow: hidden;
+}
+
 .intro__wrapper {
     position: relative;
     z-index: -1;
+    overflow: hidden;
     .container();
     min-height: 460px;
     padding-top: 100px;
@@ -17,6 +24,12 @@
        background-size: 215% 100%;
        background-position: center;
        }
+}
+
+.intro {
+    max-width: 320px;
+    .container();
+    padding: 0;
 }
 
 .intro__header {
@@ -48,7 +61,11 @@
 }
 
 @media @tablet-widths {
-    
+    .intro {
+    max-width: 700px;
+}
+  
+  
     .intro__wrapper {
         min-height: 727px;
         background: #1d2631 url("../../img/back-tablet@1x.jpg") no-repeat;
@@ -72,6 +89,10 @@
 }
 
 @media @desktop-widths {
+       .intro {
+    max-width: 1200px;
+}  
+  
    .intro__wrapper {
         min-height: 727px;
         background: #1d2631 url("../../img/intro-bg-desktop.jpg") no-repeat;
