@@ -115,6 +115,7 @@ img {
   height: auto;
 }
 .page-header {
+  z-index: 10;
   width: 320px;
   margin: 0 auto;
   display: -webkit-box;
@@ -419,7 +420,7 @@ img {
 }
 .intro {
   position: relative;
-  z-index: -10;
+  z-index: 1;
   overflow: hidden;
 }
 .intro__wrapper {
@@ -451,6 +452,11 @@ img {
     background-size: 215% 100%;
     background-position: center;
   }
+}
+.owl-dots {
+  position: absolute;
+  bottom: 5px;
+  left: 124px;
 }
 .intro {
   max-width: 320px;

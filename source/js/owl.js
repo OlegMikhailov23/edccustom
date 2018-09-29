@@ -1,10 +1,10 @@
 
-
+$(document).ready(function(){
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    dots:false,
+    dots:true,
     items:1,
     autoplay: true,
     nav: false,
@@ -13,4 +13,5 @@ $('.owl-carousel').owlCarousel({
     mouseDrag: false,
     touchDrag: false,
     margin: 0
+})
 });

@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EDC custom главная</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
     
     <!--Доп стили-->
     
@@ -16,9 +14,18 @@
     
     <!--Доп стили-->
     
+    <!--Основные стили-->
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!--Основные стили-->
+    
+   
+    
 </head>
 
-<body>
+<body class="body-wrapper">
     <header class="page-header">
         <div class="page-header__logo">
             <a href="#" class="page-header__logo-link">Логотип</a>
@@ -43,7 +50,7 @@
     </header>
     <main>
         <section class="intro">
-           <div class="owl-carousel">
+           <div class="owl-carousel owl-theme">
     <div class="item">
        <div class="intro__wrapper"></div>
         <!-- Здесь можно размещать HTML отзыва -->
@@ -59,6 +66,7 @@
         </div>
        
         </section>
+        
         <section class="download-app">
             <div class="download-app__wrapper">
                 <h1 class="download-app__title">Взгляните на жизнь иначе!</h1>
@@ -234,11 +242,11 @@
         </div>
     </footer>
    <script src="js/script.js"></script>
-   <!--Доп скрипт-->
-   <script src="libs/jquery/jquery.js"></script>
-   <script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-   <script src="js/owl.js"></script>
-   <!--Доп скрипт-->
+    <!--Скрипты-->
+    <script src="libs/jquery/jquery.js"></script>
+    <script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="js/owl.js"></script>
+    <!--Скрипты-->
 </body>
 
 </html>
