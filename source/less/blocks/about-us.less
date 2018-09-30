@@ -1,0 +1,34 @@
+@import "../variables.less";
+
+@import "../mixin.less";
+
+.about-us__wrapper {
+    .container();
+    background-color: @advantages-bg;
+    .padding-left-right (20px, 20px);
+    padding-bottom: 20px;
+        margin-top: 50px;
+    padding-top: 40px;
+}
+
+.about-us__title {
+    text-align: center;
+    .zero-style();
+    .font-size( 30px, 26px);
+    color: @main-font-color;
+    font-family: inherit;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+
+.about-us__pic {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-image: url("../../img/shop-store-frontal-building.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}

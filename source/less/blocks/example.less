@@ -1,0 +1,36 @@
+@import "../variables.less";
+
+@import "../mixin.less";
+
+.example {
+    .container();
+  & .example__title {
+    text-align: center;
+    .zero-style();
+    .font-size( 24px, 26px);
+    margin-top: 50px;
+    color: @main-font-color;
+    font-family: inherit;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.example__item {
+    width: 100%;
+    .padding-left-right(20px, 20px);
+    padding-top: 20px;
+    border: 2px solid @border-color;
+    margin-bottom: 20px;
+    box-shadow: 1px 0 15px 3px #ccc;
+  & img {
+    width: 100%;
+  }
+  & p {
+    text-align: center;
+  }
+}
+
+

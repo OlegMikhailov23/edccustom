@@ -12,15 +12,21 @@
 
 .gallery__wrapper {
     .container();
-    margin-top: -225px;
+    margin-top: 50px;
     background: @body-bg;
     color: @main-font-color;
 }
 
 .gallery__title {
-    .padding-top-bottom (52px, 56px);
-    .padding-left-right (35px, 35px);
     text-align: center;
+    .zero-style();
+    .font-size( 30px, 26px);
+    color: @main-font-color;
+    font-family: inherit;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 60px;
 }
 
 .gallery__title p {
@@ -42,7 +48,7 @@
     height: 135px;
   &::before {
       position: absolute;
-      content: "Панорама дня";
+    content: "ХИТ ПРОДАЖ";
       display: block;
     
       width: 140px;
@@ -82,28 +88,8 @@
     font-family: inherit;
 }
 
-.gallery__likes-counter {
-    .font-size (12px, 24px);
-    color: @contact-font-color;
-    text-transform: uppercase;
-}
-
-.gallery__likes {
-    padding-top: 22px;
-    position: relative;
-}
-
-.gallery__heart-btn {
-    position: relative;
-    margin-right: 10px;
-    top: -5px;
-    font-size: 0;
-    border: none;
-    background-color: none;
-    cursor: pointer;
-    width: 13px;
-    height: 13px;
-    background: url("../../img/icon-heart.svg") no-repeat center;
+.gallery__comment-btn {
+    margin-top: 20px;
 }
 
 @media @tablet-widths {
