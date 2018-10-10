@@ -8,9 +8,9 @@
   }
 
 .contacts__map {
-  background: #c2c2c2 url("../../img/bg-map-mobile@1x.png") no-repeat center;
+  background: #c2c2c2 url("../../img/map-mobile.png") no-repeat center;
   background-size: 100%;
-  min-height: 300px;
+  max-height: 300px;
 }
 
 .contacts__header {
@@ -95,11 +95,15 @@
   
   .contacts {
       background-size: cover;
-      min-height: 720px;
+      height: auto;
   }
   
   .contacts::before{
     display: none;
+  }
+  
+  .contacts__map {
+  background: #c2c2c2 url("../../img/map-tablet.png") no-repeat center;
   }
 }
 
@@ -120,6 +124,11 @@
   .contacts__header {
       .padding-left-right (300px, 300px);
       .font-size( 50px, 52px);
+  }
+  
+  .contacts__map {
+  background: #c2c2c2 url("../../img/map-desktop.png") no-repeat center;
+  background-size: 100%;
   }
 }
 

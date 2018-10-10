@@ -2,10 +2,6 @@
 
 @import "../mixin.less";
 
-.main-nav__wrapper {
-
-}
-
 .main-nav {
     display: none;
     position: absolute;
@@ -14,6 +10,7 @@
     opacity: 1;
     z-index: 1000;
     animation: main-nav-bounce 0.2s;
+    box-shadow: 1px 0 15px 3px #000;
 }
 
 .main-nav--nojs {
@@ -31,9 +28,9 @@
 
 .main-nav__list-item {
     .zero-style();
-    .padding-left-right (20px, 20px);
+    .padding-left-right (10px, 20px);
     display: block;
-    background-color: #283645;
+    background-color: #ca9f67;
     padding-top: 19px;
     padding-bottom: 21px;
     text-align: center;
@@ -42,7 +39,7 @@
 }
 
 .main-nav__list-item:hover {
-    background-color: #3c5064;
+    background-color: #edc797;
     transition: 0.3s;
 }
 
@@ -63,9 +60,10 @@
 
 .main-nav__logo-link {
     display: block;
-    .size(75px, 23px);
+    .size(130px, 42px);
     font-size: 0;
-    background: url("../../img/logo-pink-white-mobile.svg") center no-repeat;
+    background: url("../../img/main-logo.svg") center no-repeat;
+    background-size: 100%;
 }
 
 .page-header__close-btn {
@@ -106,14 +104,14 @@
 
 
 .page-header__close-btn:hover::after {
-   background-color: @nav-active-color;
+   background-color: #000000;
    transition: 0.4s;
    transform: rotate(135deg);
    perspective: 150px;
 }
 
 .page-header__close-btn:hover::before {
-   background-color: @nav-active-color;
+   background-color: #000000;
    transition: 0.4s;
    transform: rotate(-135deg);
    perspective: 150px;
@@ -125,6 +123,7 @@
     width: 625px;
     position: relative;
     animation: none;
+    box-shadow: none;
   }
   .main-nav__list {
       font-size: 0;

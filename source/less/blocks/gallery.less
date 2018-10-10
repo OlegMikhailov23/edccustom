@@ -5,9 +5,6 @@
 .gallery__item {
     .padding-left-right (20px, 20px);
     margin-top: 20px;
-  & .gallery__item-panorama {
-      margin-top: 0;
-  }
 }
 
 .gallery__wrapper {
@@ -15,6 +12,7 @@
     margin-top: 50px;
     background: @body-bg;
     color: @main-font-color;
+
 }
 
 .gallery__title {
@@ -35,20 +33,14 @@
    font-family: inherit;
 }
 
-.gallery__photo {
-    width: 280px;
-    height: 180px;
-}
-
-.gallery__item-panorama {
+.gallery__item-hit {
     position: relative;
     padding: 0;
-    margin-left: -20px;
     width: 320px;
-    height: 135px;
+    height: auto;
   &::before {
       position: absolute;
-    content: "ХИТ ПРОДАЖ";
+      content: "ХИТ ПРОДАЖ";
       display: block;
     
       width: 140px;
@@ -63,69 +55,264 @@
       .font-size (12px, 24px);
       text-transform: uppercase;
       text-align: center;
+      z-index: 10;
   }
 }
 
-.gallery__comment {
+.gallery__photo {
+    position: relative;
+}
+
+.gallery__depict {
     background-color: @advantages-bg;
     .padding-left-right (18px, 18px);
     .padding-top-bottom (23px; 23px);
   & p {
       .zero-style();
       .font-size (14px, 24px);
+      padding-top: 15px;
   }
 }
 
-.gallery__comment-auhor {
-    .font-size (14px, 24px);
+.gallery__name-item {
+    .font-size (1.3em, 26px);
     font-weight: 700;
     font-family: inherit;
 }
 
-.gallery__comment-time-ago {
-    .font-size (12px, 24px);
-    font-weight: 300;
-    font-family: inherit;
+.gallery__price {
+  padding-top: 20px;
+  text-align: center;
+  & b {
+  .zero-style();
+  font-family: inherit;
+  font-weight: 700;
+  .font-size (24px, 24px);
+  }
 }
 
 .gallery__comment-btn {
     margin-top: 20px;
 }
 
+.gallery__item-hit-pic {
+  position: relative;
+  height: 300px;
+  display: none;
+  width: 100%;
+  background: #cccccc url("../../img/bg-pic-hit-mobile@1x.jpg") center no-repeat;
+  animation: reviews-bounce 0.6s;
+}
+
+.gallery__item-pic {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  animation: reviews-bounce 0.6s;
+  background: #cccccc url("../../img/bg-pic-hit-mobile@1x.jpg") center no-repeat;
+  display: none;
+}
+
+/*управление картинкой хита*/
+
+.gallery__item-hit #hit-view1:checked ~ .hit__toggles .slider__toggle:nth-child(1),
+.gallery__item-hit #hit-view2:checked ~ .hit__toggles .slider__toggle:nth-child(2){
+  background-color: @main-color-dark;
+  border-color: #bec2c7;
+  transition: 0.4s;
+}
+
+.gallery__item-hit #hit-view1:checked ~ .gallery__item-hit-pic:first-of-type {
+    display: block;
+}
+
+.gallery__item-hit #hit-view2:checked ~ .gallery__item-hit-pic:nth-child(4) {
+    display: block;
+}
+
+/*управление картинкой хита*/
+
+/*управление картинкой обычных товаров*/
+
+/*первый товар*/
+.gallery__item-1 #item1-view1:checked ~ .item__toggles .slider__toggle:nth-child(1),
+.gallery__item-1 #item1-view2:checked ~ .item__toggles .slider__toggle:nth-child(2){
+  background-color: @main-color-dark;
+  border-color: #bec2c7;
+  transition: 0.4s;
+}
+
+.gallery__item-1 #item1-view1:checked ~ .gallery__item-pic:first-of-type {
+    display: block;
+}
+
+.gallery__item-1 #item1-view2:checked ~ .gallery__item-pic:nth-child(4) {
+    display: block;
+}
+
+/*первый товар*/
+
+/*второй товар*/
+
+.gallery__item-2 #item2-view1:checked ~ .item__toggles .slider__toggle:nth-child(1),
+.gallery__item-2 #item2-view2:checked ~ .item__toggles .slider__toggle:nth-child(2){
+  background-color: @main-color-dark;
+  border-color: #bec2c7;
+  transition: 0.4s;
+}
+
+.gallery__item-2 #item2-view1:checked ~ .gallery__item-pic:first-of-type {
+    display: block;
+}
+
+.gallery__item-2 #item2-view2:checked ~ .gallery__item-pic:nth-child(4) {
+    display: block;
+}
+
+/*второй товар*/
+
+/*3й товар*/
+
+.gallery__item-3 #item3-view1:checked ~ .item__toggles .slider__toggle:nth-child(1),
+.gallery__item-3 #item3-view2:checked ~ .item__toggles .slider__toggle:nth-child(2){
+  background-color: @main-color-dark;
+  border-color: #bec2c7;
+  transition: 0.4s;
+}
+
+.gallery__item-3 #item3-view1:checked ~ .gallery__item-pic:first-of-type {
+    display: block;
+}
+
+.gallery__item-3 #item3-view2:checked ~ .gallery__item-pic:nth-child(4) {
+    display: block;
+}
+
+
+/*3й товар*/
+
+
+/*4й товар*/
+
+.gallery__item-4 #item4-view1:checked ~ .item__toggles .slider__toggle:nth-child(1),
+.gallery__item-4 #item4-view2:checked ~ .item__toggles .slider__toggle:nth-child(2){
+  background-color: @main-color-dark;
+  border-color: #bec2c7;
+  transition: 0.4s;
+}
+
+.gallery__item-4 #item4-view1:checked ~ .gallery__item-pic:first-of-type {
+    display: block;
+}
+
+.gallery__item-4 #item4-view2:checked ~ .gallery__item-pic:nth-child(4) {
+    display: block;
+}
+
+
+/*4й товар*/
+
+/*5й товар*/
+
+.gallery__item-5 #item5-view1:checked ~ .item__toggles .slider__toggle:nth-child(1),
+.gallery__item-5 #item5-view2:checked ~ .item__toggles .slider__toggle:nth-child(2){
+  background-color: @main-color-dark;
+  border-color: #bec2c7;
+  transition: 0.4s;
+}
+
+.gallery__item-5 #item5-view1:checked ~ .gallery__item-pic:first-of-type {
+    display: block;
+}
+
+.gallery__item-5 #item5-view2:checked ~ .gallery__item-pic:nth-child(4) {
+    display: block;
+}
+
+
+/*5й товар*/
+
+
+/*управление картинкой обычных товаров*/
+
+.hit__toggles {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+    left: 140px;
+}
+
+.item__toggles {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+    left: 110px;
+}
+
+.slider__toggle {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #bec2c7;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__toggle:not(:last-of-type) {
+margin-right: 20px;
+}
+
+.slider__toggle:hover {
+  background-color: @main-color-dark;
+  transition: 0.3s;
+}
+
 @media @tablet-widths {
   .gallery__wrapper {
       display: flex;
+      align-items: baseline;
       flex-wrap: wrap;
       flex-direction: row;
-      .padding-left-right (40px, 40px);
-      margin-top: -295px;
+      .padding-left-right (0px, 0px);
       font-size: 0;
+      justify-content: space-between;
   }
   
-  .gallery__item-panorama {
-      height: 510px;
+  .gallery__item-hit {
+      height: 508px;
     &::before {
-        right: -340px;
+        right: 40px;
         top: 50px;
     }
   }
   
-  .gallery__comment-panorama {
-      margin-top: -1px;
+  .gallery__item-pic {
+      height: 335px;
   }
   
-  .gallery__photo {
-    width: 300px;
-    height: 300px;
+  .gallery__item-hit-container {
+      width: 100%;
+  }
+  
+  .hit__toggles {
+      left: 310px;
   }
   
   .gallery__item {
-    align-items: baseline;
     .padding-left-right (0px, 0px);
 }
   
+  .gallery__item-hit {
+    width: 100%;
+  }
+  
   .gallery__title {
+      margin: 0 auto;
       .padding-left-right (90px, 90px);
+      padding-bottom: 60px;
   }
   
   .gallery__title p {
@@ -133,47 +320,33 @@
   }
   
   .gallery__photo img {
-      min-width:  300px;
+      width:  415px;
   }
   
-  .gallery__photo--panorama {
-    margin-left: -20px;
-    min-width: 700px;
+  .gallery__item-hit-pic {
+    width: 100%;
     background-size: cover;
-  }
-  
-  .gallery__comment {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-between;
   }
   
   .gallery__comment-auhor {
       padding-right: 5px;
   }
   
-  
-  .gallery__comment-time-ago {
-      flex-basis: 70%;
-  }
-  
-  .gallery__likes-panorama {
-      position: absolute;
-      top: 0;
-      right: 30px;
-  }
+
   
   .gallery__item:not(:nth-child(2)) {
-    display: inline-block;
-    vertical-align: top;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 48%;
     margin-bottom: 0px;
   }
   
-  .gallery__item:not(:nth-child(2)) .gallery__comment {
-      min-height: 170px;
+  .gallery__item:not(:nth-child(2)) .gallery__depict {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 570px;
       min-width: 300px;
   }
   
@@ -181,24 +354,22 @@
       margin-right: 20px;
   }
   
-  .gallery__comment .gallery__likes {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      width: 100%;
-      margin-bottom: 0;
-  }
   
-  .gallery__comment .gallery__likes-panorama {
-  width: auto;
-  }
+  .gallery__name-item {
+    .font-size (25px, 26px);
+    font-weight: 700;
+    font-family: inherit;
+    
+}
   
-  .gallery__heart-btn {
-      top: 5px;
-  }
+  .gallery__name-item {
+    .font-size (25px, 26px);
+    font-weight: 700;
+    font-family: inherit;
+}
   
-  .gallery__likes-panorama .gallery__likes-counter{
-      margin-right: 20px;
+  .item__toggles {
+      left: 130px;
   }
 }
 
@@ -207,19 +378,58 @@
       .padding-left-right (130px, 130px);
   }
   
-  .gallery__photo--panorama {
-    margin-left: -110px;
-    min-width: 1200px;
+  .gallery__item:not(:nth-child(2)) {
+      width: 32%;
+  }
+  
+  .gallery__item-hit-pic img{
+     height: 508px;
+  }
+  
+  .gallery__item-hit-container {
+    margin-bottom: 30px;
   }
   
   .gallery__photo {
+      width: 300px;
+      height: 500px;
+  }
+  
+  .gallery__photo img {
+      width:  300px;
+      height: 400px;
+  } 
+  
+  .gallery__photo {
+      height: auto;
+  }
+  
+  .hit__toggles {
+      left: 440px
+  }
+  
+  .gallery__item-pic {
       height: 400px;
   }
   
-  .gallery__item-panorama::before {
-        right: -640px;
+  .gallery__item-hit-container .gallery__depict {
+    padding-left: 50px;
+    padding-left: 50px;
+    & p {
+      .font-size (20px, 26px);
+      margin-bottom: 30px;
+  }
   }
   
+  .gallery__item .gallery__depict p {
+    .font-size (14px, 26px);
+  }
+  
+  .gallery__name-item-container {
+      padding-top: 20px;
+      text-align: center;
+  }
+
   .gallery__item:not(:nth-child(2)) {
     margin-bottom: 55px;
   }
@@ -228,17 +438,7 @@
       margin: 0px;
   }
   
-  .gallery__comment-panorama {
-      margin-top: -4px;
-      width: 940px;
-      margin-bottom: 50px;;
-  }
-  
-  
-  .gallery__item:nth-child(3n+1) {
-      margin-left: 20px;
-      margin-right: 20px;
-  }
+
   
   .gallery__item:nth-child(4) ~ .gallery__item {
       margin-bottom: 0;

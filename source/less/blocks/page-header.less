@@ -7,7 +7,7 @@
     .container();
     display: flex;
     justify-content: space-between;
-    .padding-left-right (20px, 20px);
+    .padding-left-right (10px, 20px);
    
     min-height: 69px;
     background-color: @page-header-bg;
@@ -17,14 +17,13 @@
 
 .page-header__logo-link {
     display: block;
-    .size(75px, 23px);
+    .size(130px, 42px);
     font-size: 0;
-    background: url("../../img/logo-pink-white-mobile.svg") center no-repeat;
+    background: url("../../img/main-logo.svg") center no-repeat;
+    background-size: 100%;
 }
 
-.page-header__logo-link:hover {
-    background: url("../../img/logo-pink-white-mobile-hover.svg") center no-repeat;
-} 
+
 
 .page-header__open {
     position: relative;
@@ -58,9 +57,9 @@
 }
 
 .page-header__open-btn:hover::before {
-    background-color: @nav-active-color;
-    box-shadow: 0 10px 0 0 @nav-active-color,
-                0 20px 0 0 @nav-active-color;
+    background-color: #ca9f67;
+    box-shadow: 0 10px 0 0 #ca9f67,
+                0 20px 0 0 #ca9f67;
     transition: 0.3s;
 }
 
@@ -68,20 +67,16 @@
    .page-header {
        min-height: 110px;
        .padding-left-right (40px, 40px);
-       margin-bottom: -115px;
        padding-top: 25px;
-       padding-bottom: 50px;
+       padding-bottom: 25px;
    }
   
    .page-header__logo-link {
-       .size(147px, 40px);
-       background: url("../../img/logotype-white-tablet.svg") center no-repeat;
+       .size(167px, 60px);
+       background: url("../../img/main-logo.svg") center no-repeat;
+       background-size: 100% 100%;
   }
-  
-  .page-header__logo-link:hover {
-    background: url("../../img/logotype-white-tablet-hover.svg") center no-repeat;
-} 
-  
+    
   .page-header__open-btn::before {
       height: 4px;
   }
@@ -95,12 +90,12 @@
   .page-header {
       .padding-left-right (130px, 130px);
       padding-bottom: 0;
-      margin-bottom: -115px;
   }
   
   .page-header__logo-link {
-       .size(150px, 44px);
-       background: url("../../img/logotype-white-desktop.svg") center no-repeat;
+       .size(220px, 74px);
+       background: url("../../img/main-logo.svg") center no-repeat;
+       background-size: 100%;
   }
   
   .page-header__open {

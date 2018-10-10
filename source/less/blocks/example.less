@@ -25,11 +25,38 @@
     border: 2px solid @border-color;
     margin-bottom: 20px;
     box-shadow: 1px 0 15px 3px #ccc;
+    padding-bottom: 10px;
   & img {
     width: 100%;
+    border: 2px solid @border-color;
   }
   & p {
+    .zero-style();
+    .font-size (1.1em, 18px);
+    font-style: italic;
+    color: inherit;
+  } 
+  & .example__item-title {
+    .zero-style();
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: inherit;
+    .font-size (1.5em, 26px);
     text-align: center;
+  }
+}
+
+@media @tablet-widths {
+  .example__item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .example__item {
+      width: 45%;
   }
 }
 
