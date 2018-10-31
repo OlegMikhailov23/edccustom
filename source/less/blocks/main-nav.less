@@ -2,6 +2,10 @@
 
 @import "../mixin.less";
 
+.page-header {
+    position: relative;
+}
+
 .main-nav {
     display: none;
     position: absolute;
@@ -19,11 +23,14 @@
 
 .main-nav--open {
     display: block;
+    width: 100%;
+    min-width: 320px;
 }
 
 .main-nav__list {
     .container();
     .zero-style();
+    width: 100%;
 }
 
 .main-nav__list-item {
@@ -60,9 +67,9 @@
 
 .main-nav__logo-link {
     display: block;
-    .size(130px, 42px);
+    .size(110px, 23px);
     font-size: 0;
-    background: url("../../img/main-logo.svg") center no-repeat;
+    background: url("../../img/logo-mobile--white.png") center no-repeat;
     background-size: 100%;
 }
 
@@ -154,8 +161,8 @@
     position: absolute;
     width: auto;
     bottom: 0;
-    left: 20px;
-    right: 20px;
+    left: 0%;
+    right: 0%;
     height: 2px;
     background-color: #fff;
     animation: main-nav-after-bounce 0.2s;

@@ -4,15 +4,18 @@
 
 .download-app {
     position: relative;
-    .container();
+    width: 100%;
 }
 
 .download-app__wrapper {
-    .container();
+    width: 100%;
     padding-top: 29px;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 35px;
     background-color: @main-color-dark;
     text-align: center;
+    min-width: 320px;
 }
 
 .download-app__title {
@@ -23,6 +26,7 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 30px;
+    width: 90%;
     .padding-top-bottom (15px,
     15px);
     .padding-left-right (36px,
@@ -36,6 +40,7 @@
     font-family: inherit;
     font-weight: 700;
     cursor: pointer;
+    text-decoration: none;
   &:hover {
     background-color: #ffffff;
     color: #000000;
@@ -75,11 +80,17 @@
 }
 
 @media @tablet-widths {
+    .download-app {
+      position: relative;
+      margin: 0 auto;
+      .container();
+    }
+  
     .download-app__wrapper {
         position: absolute;
-        left: 40px;
-        top: -545px;
-        width: 300px;
+        left: 5%;
+        top: -544px;
+        width: 320px;
         background-color: transparent;
     }
     .download-app__title {
@@ -87,12 +98,12 @@
         display: block;
         margin: 0 auto;
         padding-bottom: 37px;
-        width: 300px;
+        width: 100%;
         color: @font-color-white;
         font-family: inherit;
         .font-size(40px,
-        42px);
-        font-weight: 300;
+        48px);
+        font-weight: 700;
     }
     .download-app__btn {
         margin-bottom: 42px;
@@ -105,7 +116,7 @@
         position: absolute;
         left: 50px;
         top: -545px;
-        width: 300px;
+        width: 390px;
         background-color: transparent;
     }
   
@@ -118,8 +129,8 @@
         color: @font-color-white;
         font-family: inherit;
         .font-size(40px,
-        42px);
-        font-weight: 300;
+        47px);
+        font-weight: 700;
     }
     .download-app__btn {
         margin-bottom: 42px;

@@ -7,26 +7,38 @@
     .container();
     display: flex;
     justify-content: space-between;
-    .padding-left-right (10px, 20px);
-   
+    .padding-left-right (10px, 15px);
+    width: 100%;
+    min-width: 320px;
     min-height: 69px;
     background-color: @page-header-bg;
     padding-top: 20px;
-    position: relative;
 }
 
 .page-header__logo-link {
     display: block;
-    .size(130px, 42px);
+    .size(130px, 28px);
     font-size: 0;
-    background: url("../../img/main-logo.svg") center no-repeat;
-    background-size: 100%;
+    background: url("../../img/main-logo-mobile-v2.png") center no-repeat;
+    background-size: 100% 100%;
 }
 
-
+.page-header__phone a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 28px;
+    font-weight: 700;
+    font-family: inherit;
+    &:hover {
+        color: #ca9f67;
+        transition: 0.3s;
+    }
+}
 
 .page-header__open {
     position: relative;
+    
 }
 
 .page-header__btn {
@@ -38,7 +50,7 @@
 }
 
 .page-header__open-btn {
-    width: 50px;
+    width: 30px;
     height: 25px;
 }
 
@@ -48,8 +60,8 @@
     top: 0px;
     left: 0px;
     
-    width: 50px;
-    height: 2px;
+    width: 30px;
+    height: 4px;
     
     background-color: #ffffff;
     box-shadow: 0 10px 0 0 #ffffff,
@@ -71,9 +83,26 @@
        padding-bottom: 25px;
    }
   
+  .page-header__phone a {
+      position: relative;
+      display: block;
+      font-size: 1.5em;
+      padding-top: 10px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: -25px;
+        width: 20px;
+        height: 20px;
+        background: url("../../img/call-answer.svg") center no-repeat;
+        background-size: 100%;
+    }
+  }
+  
    .page-header__logo-link {
-       .size(167px, 60px);
-       background: url("../../img/main-logo.svg") center no-repeat;
+       .size(207px, 45px);
+       background: url("../../img/main-logo-mobile-v2.png") center no-repeat;
        background-size: 100% 100%;
   }
     
@@ -84,17 +113,35 @@
   .page-header__open {
       top: 16px;
   }
+  
+  .page-header__open-btn::before {
+    width: 40px;
+    height: 5px;
+  }
 }
 
 @media @desktop-widths {
   .page-header {
-      .padding-left-right (130px, 130px);
+      .padding-left-right (100px, 40px);
       padding-bottom: 0;
   }
   
+  .page-header__logo {
+    order: 1;
+  }
+  
+  .main-nav {
+      order: 2;
+      margin-left: 50px;
+  }
+  
+  .page-header__phone {
+      order: 3;
+  }
+  
   .page-header__logo-link {
-       .size(220px, 74px);
-       background: url("../../img/main-logo.svg") center no-repeat;
+       .size(220px, 48px);
+       background: url("../../img/logo-desktop-v2.png") center no-repeat;
        background-size: 100%;
   }
   

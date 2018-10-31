@@ -1,4 +1,10 @@
-gulpfile.js
-package.json
-build/
 node_modules/
+.DS_Store
+Thumbs.db
+.idea
+*.sublime*
+*.log
+*.psd
+*.ai
+*.pdf
+build/

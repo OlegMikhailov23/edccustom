@@ -1,0 +1,75 @@
+@import "../variables.less";
+
+@import "../mixin.less";
+
+.order-pay__wrapper {
+    .container();
+    background-color: @advantages-bg;
+    .padding-left-right (20px, 20px);
+    padding-bottom: 20px;
+        margin-top: 50px;
+    padding-top: 40px;
+}
+
+.order-pay__title {
+    text-align: center;
+    .zero-style();
+    .font-size( 30px, 26px);
+    color: @main-font-color;
+    font-family: inherit;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+
+.order-pay__pic-pay {
+    width: 250px;
+    height: 180px;
+    margin: 0 auto;
+    background-image: url("../../img/pay-per-click.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.order-pay__pic-delivery {
+    width: 250px;
+    height: 180px;
+    margin: 0 auto;
+    background-image: url("../../img/delivery-truck.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+@media @tablet-widths {
+  .order-pay__wrapper p {
+      .font-size( 1.3em, 22px);
+  }
+}
+
+@media @desktop-widths {
+  .order-pay__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .padding-left-right (40px, 40px);
+    padding-bottom: 50px;
+    border-radius: 30%;
+    & p {
+        .zero-style();
+        .font-size( 1em, 22px);
+        padding-top: 15px;
+        font-family: inherit;
+        color: inherit;
+    }
+  }
+  
+  .order-pay__wrapper-item-container {
+      .padding-left-right(20px, 20px);
+      width: 50%;
+  }
+  
+  
+}
