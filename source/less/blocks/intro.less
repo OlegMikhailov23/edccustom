@@ -1,86 +1,82 @@
 @import "../variables.less";
-
 @import "../mixin.less";
 
 .intro {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  width: 100%;
-  margin: 0;
-  min-width: 320px;
+      position: relative;
+      z-index: 0;
+      overflow: hidden;
+      width: 100%;
+      margin: 0;
+      min-width: 320px;
 }
 
 .intro__wrapper {
-    position: relative;
-    z-index: -1;
-    overflow: hidden;
-    width: 100%;
-    min-height: 350px;
-    background: #0d0d0d;
-  & img {
-    width: 100%;
-  }
+      position: relative;
+      z-index: -1;
+      overflow: hidden;
+      width: 100%;
+      min-height: 350px;
+      background: #0d0d0d;
 }
 
 .owl-dots {
-    position: absolute;
-    bottom: 5px;
-    left: 40%;
+      position: absolute;
+      bottom: 5px;
+      left: 40%;
 }
 
 .intro {
-    width: 100%;
-    padding: 0;
+      width: 100%;
+      padding: 0;
 }
 
 .intro__header {
-    .zero-style;
-    .font-size (24px,
-    30px);
-    color: @font-color-white;
-    font-weight: 300;
-    font-family: inherit;
-    text-align: center;
-  & br {
-    display: none;
-  }
+      .zero-style;
+      .font-size (24px,
+              30px);
+      color: @font-color-white;
+      font-weight: 300;
+      font-family: inherit;
+      text-align: center;
+      
+      & br {
+            display: none;
+      }
 }
 
 @media @tablet-widths {
-    .intro {
-    max-width: 700px;
-    .container();
+      .intro__wrapper {
+            max-height: 350px;
+      }
+      
+      .owl-dots {
+            left: 45%;
+      }
+      
+      
+      .intro__wrapper {
+            min-height: 700px;
+            background-color: #0d0d0d;
+      }
 }
-  
-  .owl-dots {
-      left: 314px;
-  }
-  
-  
-  .intro__wrapper {
-    min-height: 730px;
-    background-color: #0d0d0d;
-  }
-}
-  
+
 @media @desktop-widths {
-       .intro {
-    max-width: 1200px;
-}  
-  
-   .owl-dots {
-      left: 564px;
-  }
-  
-  
-   .intro__wrapper {
-        min-height: 727px;
-        background-color: #0d0d0d;
-        
-    }
-    
-  .intro__header br {
-  display: block;
-  }
+      .intro {
+           width: 100%;
+      }
+      
+      .owl-dots {
+            left: 564px;
+      }
+      
+      
+      .intro__wrapper {
+            min-height: 727px;
+            background-color: #0d0d0d;
+            
+      }
+      
+      .intro__header br {
+            display: block;
+      }
 }

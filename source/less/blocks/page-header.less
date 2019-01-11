@@ -1,151 +1,176 @@
 @import "../variables.less";
-
 @import "../mixin.less";
 
 .page-header {
-    z-index: 10;
-    .container();
-    display: flex;
-    justify-content: space-between;
-    .padding-left-right (10px, 15px);
-    width: 100%;
-    min-width: 320px;
-    min-height: 69px;
-    background-color: @page-header-bg;
-    padding-top: 20px;
+	z-index: 1000;
+	.container();
+	display: flex;
+	justify-content: space-between;
+	.padding-left-right (10px, 15px);
+	width: 100%;
+	min-width: 320px;
+	min-height: 69px;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding-top: 20px;
 }
 
 .page-header__logo-link {
-    display: block;
-    .size(130px, 28px);
-    font-size: 0;
-    background: url("../../img/main-logo-mobile-v2.png") center no-repeat;
-    background-size: 100% 100%;
+	display: block;
+	.size(130px, 28px);
+	font-size: 0;
+	background: url("../../img/main-logo-mobile-v2.png") center no-repeat;
+	background-size: 100% 100%;
 }
 
 .page-header__phone a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1em;
-    line-height: 28px;
-    font-weight: 700;
-    font-family: inherit;
-    &:hover {
-        color: #ca9f67;
-        transition: 0.3s;
-    }
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 1em;
+	line-height: 28px;
+	font-weight: 700;
+	font-family: inherit;
+	
+	&:hover {
+		color: #ca9f67;
+		transition: 0.3s;
+	}
 }
 
 .page-header__open {
-    position: relative;
-    
+	position: relative;
+	
 }
 
 .page-header__btn {
-    font-size: 0;
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
+	font-size: 0;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
 }
 
 .page-header__open-btn {
-    width: 30px;
-    height: 25px;
+	position: relative;
+	width: 30px;
+	height: 25px;
 }
 
 .page-header__open-btn::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    
-    width: 30px;
-    height: 4px;
-    
-    background-color: #ffffff;
-    box-shadow: 0 10px 0 0 #ffffff,
-                0 20px 0 0 #ffffff;
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 35px;
+	height: 4px;
+	
+	background-color: #ffffff;
+	box-shadow: 0 10px 0 0 #ffffff,
+	0 20px 0 0 #ffffff;
+}
+
+.page-header__open-btn::after {
+	content: "Меню";
+	display: block;
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	
+	width: 30px;
+	height: 30px;
+	.font-size (11px, 13px);
+	
+	text-transform: uppercase;
+	color: #ffffff;
 }
 
 .page-header__open-btn:hover::before {
-    background-color: #ca9f67;
-    box-shadow: 0 10px 0 0 #ca9f67,
-                0 20px 0 0 #ca9f67;
-    transition: 0.3s;
+	background-color: #ca9f67;
+	box-shadow: 0 10px 0 0 #ca9f67,
+	0 20px 0 0 #ca9f67;
+	transition: 0.3s;
 }
 
 @media @tablet-widths {
-   .page-header {
-       min-height: 110px;
-       .padding-left-right (40px, 40px);
-       padding-top: 25px;
-       padding-bottom: 25px;
-   }
-  
-  .page-header__phone a {
-      position: relative;
-      display: block;
-      font-size: 1.5em;
-      padding-top: 10px;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 14px;
-        left: -25px;
-        width: 20px;
-        height: 20px;
-        background: url("../../img/call-answer.svg") center no-repeat;
-        background-size: 100%;
-    }
-  }
-  
-   .page-header__logo-link {
-       .size(207px, 45px);
-       background: url("../../img/main-logo-mobile-v2.png") center no-repeat;
-       background-size: 100% 100%;
-  }
-    
-  .page-header__open-btn::before {
-      height: 4px;
-  }
-  
-  .page-header__open {
-      top: 16px;
-  }
-  
-  .page-header__open-btn::before {
-    width: 40px;
-    height: 5px;
-  }
+	.page-header {
+		width: 100%;
+		min-height: 110px;
+		.padding-left-right (40px, 40px);
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	
+	.page-header__phone a {
+		position: relative;
+		display: block;
+		font-size: 1.5em;
+		padding-top: 10px;
+		
+		&::before {
+			content: "";
+			position: absolute;
+			top: 14px;
+			left: -25px;
+			width: 20px;
+			height: 20px;
+			background: url("../../img/call-answer.svg") center no-repeat;
+			background-size: 100%;
+		}
+	}
+	
+	.page-header__logo-link {
+		.size(207px, 45px);
+		background: url("../../img/main-logo-mobile-v2.png") center no-repeat;
+		background-size: 100% 100%;
+	}
+	
+	.page-header__open-btn::before {
+		height: 4px;
+	}
+	
+	.page-header__open {
+		top: 16px;
+	}
+	
+	.page-header__open-btn::before {
+		width: 40px;
+		height: 5px;
+	}
+	
+	.page-header__open-btn::after {
+		top: 28px;
+		left: 1px;
+		
+		font-size: 12px;
+	}
 }
 
 @media @desktop-widths {
-  .page-header {
-      .padding-left-right (100px, 40px);
-      padding-bottom: 0;
-  }
-  
-  .page-header__logo {
-    order: 1;
-  }
-  
-  .main-nav {
-      order: 2;
-      margin-left: 50px;
-  }
-  
-  .page-header__phone {
-      order: 3;
-  }
-  
-  .page-header__logo-link {
-       .size(220px, 48px);
-       background: url("../../img/logo-desktop-v2.png") center no-repeat;
-       background-size: 100%;
-  }
-  
-  .page-header__open {
-      display: none;
-  }
+	.page-header {
+		.padding-left-right (100px, 40px);
+		padding-bottom: 0;
+	}
+	
+	.page-header__logo {
+		order: 1;
+	}
+	
+	.main-nav {
+		order: 2;
+		margin-left: 50px;
+	}
+	
+	.page-header__phone {
+		order: 3;
+	}
+	
+	.page-header__logo-link {
+		.size(220px, 48px);
+		background: url("../../img/logo-desktop-v2.png") center no-repeat;
+		background-size: 100%;
+	}
+	
+	.page-header__open {
+		display: none;
+	}
 }

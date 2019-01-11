@@ -3,7 +3,7 @@
 @import "../mixin.less";
 
 .page-header {
-    position: relative;
+    position: fixed;
 }
 
 .main-nav {
@@ -27,8 +27,11 @@
     min-width: 320px;
 }
 
+.main-nav--closed {
+    display: none;
+}
+
 .main-nav__list {
-    .container();
     .zero-style();
     width: 100%;
 }
